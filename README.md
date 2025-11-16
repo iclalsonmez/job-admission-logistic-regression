@@ -1,26 +1,32 @@
 # job-admission-logistic-regression
-I. Project Description
+# Project: Job Admission Prediction with Logistic Regression
 
-This project implements a Binary Classification model using the Logistic Regression method, developed as part of the Machine Learning course.
-The goal is to determine the job acceptance (1) or rejection (0) probability of applicants based on two exam scores.
+## I. Project Description
 
-Key Requirement: The core components of the Logistic Regression algorithm (Sigmoid function, Cross-Entropy Loss, and Stochastic Gradient Descent for weight update) are implemented from scratch using only NumPy, without relying on high-level built-in functions from libraries like Scikit-learn or TensorFlow.
+This project implements a Binary Classification model using the Logistic Regression method, developed as part of the Machine Learning course.  
+The goal is to determine the job acceptance (`1`) or rejection (`0`) probability of applicants based on two exam scores.
 
+**Key Requirement:**  
+The core components of the Logistic Regression algorithm (Sigmoid function, Cross-Entropy Loss, and Stochastic Gradient Descent for weight update) are implemented **from scratch** using only **NumPy**, without relying on high-level built-in functions from libraries like Scikit-learn or TensorFlow.
 
-II. Project Structure
+---
+
+## II. Project Structure
 
 The project follows a modular structure as required by the assignment, separating the training logic from the evaluation logic.
 
+````text
 PROJECT_FOLDER/
 ├── dataset/
-│   └── hw1Data.txt       (exam scores and target labels)
-├── results/              (outputs: metrics, trained parameters, graphs)
-│   ├── final_theta.npy   (trained model weights)
-│   ├── loss_history.png  (loss graph)
-│   └── metrics_results.txt (accuracy, precision, recall, f1-score)
-├── train.py              (for model training and parameter saving)
-├── eval.py               (for performance evaluation and metric calculation)
-└── requirements.txt      
+│   └── hw1Data.txt          # exam scores and target labels
+├── results/                 # outputs: metrics, trained parameters, graphs
+│   ├── final_theta.npy      # trained model weights
+│   ├── loss_history.png     # loss graph
+│   └── metrics_results.txt  # accuracy, precision, recall, f1-score
+├── train.py                 # model training and parameter saving
+├── eval.py                  # performance evaluation and metric calculation
+└── requirements.txt
+
 
 
 III. Execution Requirements
